@@ -1,26 +1,70 @@
-# Byte-compiled / optimized / DLL files
+# ==========================
+# 🐍 PYTHON BASICS
+# ==========================
 __pycache__/
 *.py[cod]
 *$py.class
 
-# C environments
+# Distribución y builds
+build/
+dist/
+*.egg-info/
+
+# ==========================
+# 🎬 MANIM (IMPORTANTE)
+# ==========================
+# Aquí se guardan los videos y fragmentos temporales.
+# Bloqueamos toda la carpeta para que no pese gigas.
+media/
+video_slides/
+
+# Bloqueo de seguridad extra por si generas videos fuera de la carpeta media
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.gif
+
+# ==========================
+# 💻 ENTORNOS VIRTUALES
+# ==========================
+# Nunca subas tu entorno de conda/pip
 .env
 .venv
 env/
 venv/
 ENV/
 
-# Jupyter Notebooks checkpoints
+# ==========================
+# 📓 JUPYTER NOTEBOOKS
+# ==========================
+# Archivos temporales de checkpoints
 .ipynb_checkpoints/
 
-# Distribution / packaging
-dist/
-build/
-*.egg-info/
-
-# Datasets grandes (Opcional: evita subir CSVs de 1GB por error)
+# ==========================
+# 💾 DATOS Y ARCHIVOS GRANDES
+# ==========================
+# Evita subir datasets gigantes por error
 *.csv
 *.xlsx
+*.xls
+*.parquet
+*.pkl
+*.h5
 
-# Ignorar instaladores de shell
+# Instaladores y comprimidos (Tu problema anterior)
 *.sh
+*.exe
+*.msi
+*.zip
+*.tar.gz
+*.rar
+
+# ==========================
+# ⚙️ IDE Y SISTEMA
+# ==========================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+ehthumbs.db
