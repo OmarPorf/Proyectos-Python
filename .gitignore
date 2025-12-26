@@ -1,0 +1,26 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Datasets grandes (Opcional: evita subir CSVs de 1GB por error)
+*.csv
+*.xlsx
+
+# Ignorar instaladores de shell
+*.sh
